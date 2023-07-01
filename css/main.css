@@ -821,10 +821,14 @@ nav .mobile-menu {
   text-align: left;
   margin-right: -250px;
   opacity: 0;
-  background: black;
+  background: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+nav .mobile-menu a {
+  color: black;
 }
 
 nav .mobile-menu .close-menu-btn {
