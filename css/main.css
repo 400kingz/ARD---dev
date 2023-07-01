@@ -420,15 +420,7 @@ td:hover {
 
 /* -------------------- HEADER -------------------- */
 .header {
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0)
-    ),
-    url('/img/truck-sm.jpeg') no-repeat right / cover;
+  background: white;
   align-items: center;
   margin-top: -9rem;
   position: relative;
@@ -547,11 +539,12 @@ td:hover {
 /* -------------------- Icons / Images -------------------- */
 .logo-img,
 .logo-img-dark {
-  height: 7rem;
+  height: 4rem;
   width: 100%;
   z-index: 1;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-right: 7rem;
 }
 
 .logo-img {
