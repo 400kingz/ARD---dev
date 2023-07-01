@@ -1,0 +1,530 @@
+/* -------------------- MEDIUM Devices -------------------- */
+@media only screen and (min-width: 768px) {
+  /* General */
+  button {
+    padding: 0.8rem 2rem;
+    margin: 0 0.2rem;
+  }
+
+  .container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .header .hero-main p {
+    margin: 2rem 0 2.9rem;
+  }
+
+  .review-3 {
+    width: 35%;
+  }
+
+  .review-5 {
+    bottom: -7%;
+  }
+
+  /* Process */
+  .process .process-steps {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* Junk */
+  #junk .junk-text .ul-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 1rem 23rem;
+
+  }
+
+  #junk .junk-text ul {
+    width: 50%;
+  }
+
+  #junk .junk-text .phone-number {
+    margin-bottom: 3rem;
+  }
+
+  /* Project Types */
+  #project-types {
+    padding-top: 6rem;
+  }
+
+  /* Dumpsters */
+  #dumpsters .dumpster-card .dumpster-card-info-2 #popular {
+    height: 20rem;
+    width: 20rem;
+    top: -3rem;
+    right: -7rem;
+  }
+
+  /* FAQ */
+  .faq-card .faq-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 1.4rem;
+    left: 1.3rem;
+    top: 0.6rem;
+    transition: transform 0.15s ease-in-out;
+    color: var(--secondary);
+  }
+
+  #faq .faq-card .faq-content {
+    flex-direction: column;
+  }
+
+  #faq .faq-card .faq-content ul {
+    margin: 0 auto;
+  }
+
+  input:checked + .faq-card .faq-content {
+    display: flex !important;
+  }
+}
+
+/* -------------------- LARGER Devices -------------------- */
+@media only screen and (min-width: 1024px) {
+  /* General */
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .card {
+    margin-top: 0;
+  }
+
+  .faded {
+    opacity: 0.6;
+  }
+
+  .faded:hover {
+    opacity: 1;
+    transition: opacity var(--transition) ease-in-out;
+    -moz-transition: opacity var(--transition) ease-in-out;
+    -webkit-transition: opacity var(--transition) ease-in-out;
+  }
+
+  .header-secondary {
+    margin-top: 9rem;
+  }
+
+  .header-thank-you .hero-content {
+    height: unset !important;
+    padding: 17rem 0 15rem !important;
+  }
+
+  .header-thank-you .social {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    padding-bottom: 2rem;
+  }
+
+  .card,
+  .coming-soon {
+    padding: 2rem;
+  }
+
+  .review-card {
+    padding: 1rem;
+  }
+
+  .review-1 {
+    bottom: -3%;
+    left: unset;
+    right: 10%;
+    transform: translateX(0);
+    width: 25%;
+  }
+
+  .review-2 {
+    bottom: -10%;
+  }
+
+  .review-4 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .review-5 {
+    position: relative;
+    left: unset;
+    transform: unset;
+  }
+
+  /* -------------------- Animations -------------------- */
+  .fade-in-and-zoom-in {
+    transition: all var(--transition) ease-in-out;
+    -moz-transition: all var(--transition) ease-in-out;
+    -webkit-transition: all var(--transition) ease-in-out;
+  }
+
+  .fade-in-and-zoom-in:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    transition: all var(--transition) ease-in-out;
+    -moz-transition: all var(--transition) ease-in-out;
+    -webkit-transition: all var(--transition) ease-in-out;
+  }
+
+  .from-left {
+    transform: translateX(-50%);
+  }
+
+  .from-right {
+    transform: translateX(50%);
+  }
+
+  .from-left,
+  .from-right {
+    transition: opacity var(--transition) ease-in, transform var(--slow-transition) ease-in-out;
+    opacity: 0;
+  }
+
+  .from-left.appear,
+  .from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Navbar */
+  .toggler,
+  .mobile-menu-btn,
+  .mobile-menu {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+  }
+
+  nav .logo-img,
+  nav .logo-img-dark {
+    width: 9rem;
+    height: 7rem;
+    margin-left: 10%;
+  }
+
+  nav .desktop-menu {
+    display: flex;
+    z-index: 1;
+    margin-right: 10%;
+  }
+
+  nav .desktop-menu ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav .desktop-menu ul li {
+    padding: 0;
+    padding-right: 1rem;
+    
+  }
+
+  nav .desktop-menu ul li a {
+    padding: 1rem 1.8rem;
+    color: black;
+    border-radius: 10px;
+  }
+
+  nav .desktop-menu ul li a:hover {
+    background-color: var(--primary);
+    color: pink;
+    transition: 0.6s ease-in-out;
+    border-radius: 20px;
+  }
+
+  nav .desktop-menu ul li a.book-now-link {
+    /* rounded borders */
+    border-radius: 10px;
+  }
+
+  nav .desktop-menu ul li a.book-now-link:hover {
+    background-color: var(--primary);
+    border-radius: 15px;
+  }
+
+  /* Header */
+  .header {
+    background: white;
+    url('/img/hero.jpg') no-repeat right / cover;
+  }
+
+  .header .hero-content {
+    height: 750px;
+  }
+
+  .header .hero-content .phone-number {
+    display: none;
+  }
+
+  .header .hero-content .hero-main {
+    text-align: left;
+  }
+
+  .header .hero-content .hero-main button {
+    margin: 0;
+  }
+
+  .header .hero-content .hero-main button.btn-primary {
+    margin-left: 0.8rem;
+  }
+
+  /* Sizes */
+  #sizes {
+    margin-top: 1rem;
+  }
+
+  #sizes .sizes-cards {
+    display: flex;
+  }
+
+  #sizes .sizes-cards .card {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  #sizes .sizes-cards .card:first-of-type {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  #sizes .sizes-cards .card p:last-of-type {
+    height: 5rem;
+  }
+
+  #sizes .sizes-cards-2 {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #sizes .sizes-cards-2 .card {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /* Process */
+  .process .process-steps .step:hover {
+    transform: scale(1.02);
+    transition: transform var(--transition) ease-in-out;
+  }
+
+  /* Junk */
+  #junk {
+    background: url('/img/junk.jpeg') fixed no-repeat center / cover;
+    position: relative;
+  }
+
+  /* Project Types */
+  #project-types .type {
+    flex-direction: row;
+  }
+
+  #project-types .type:last-of-type {
+    padding-top: 2rem;
+  }
+
+  #project-types .type .type-text {
+    padding: 0 2rem;
+  }
+
+  #project-types .type .type-text-1 {
+    padding: 0 0 0 2rem;
+  }
+
+  #project-types .type .type-text-2 {
+    order: 1;
+    padding: 0 2rem 0 0;
+  }
+
+  #project-types .type .commercial-img {
+    order: 2;
+    margin-top: 0;
+  }
+
+  #project-types .sticky-note {
+    bottom: unset;
+    top: 2rem;
+    left: -2rem;
+    transform: unset;
+  }
+
+  /* Footer */
+  footer ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+  }
+
+  footer ul li a {
+    border: none;
+  }
+
+  /* ---------- DUMPSTERS PAGE ---------- */
+  #dumpsters .coming-soon {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+
+  #dumpsters .coming-soon > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #dumpsters .coming-soon > div:nth-child(2) > div {
+    width: 100%;
+  }
+
+  #dumpsters .coming-soon > div:nth-child(2) > div:nth-child(2) {
+    padding: 0;
+  }
+
+  #dumpsters .coming-soon div + div {
+    padding: 0;
+  }
+
+  #dumpsters .coming-soon div > div + div {
+    padding-top: 0;
+    margin-left: 2rem;
+  }
+
+  #dumpsters .dumpster-card {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+
+  #dumpsters .dumpster-card .dumpster-card-info-1 {
+    border-right: 1px solid var(--secondary);
+    width: 50%;
+    padding-right: 2rem;
+  }
+
+  #dumpsters .dumpster-card .dumpster-card-info-1 .sticky-note {
+    display: none;
+  }
+
+  #dumpsters .dumpster-card .dumpster-card-info-2 {
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  #dumpsters .dumpster-card .dumpster-card-info-2 h2 {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  #dumpsters .dumpster-card .dumpster-card-info-2 .price {
+    text-align: left;
+  }
+
+  #dumpsters .dumpster-card .dumpster-card-info-2 #popular {
+    height: 17rem;
+    width: 17rem;
+    top: -5rem;
+    right: -7rem;
+  }
+
+  /* ---------- FAQ PAGE ---------- */
+  #faq > div:last-of-type {
+    display: flex;
+    padding: 4rem 0 0;
+  }
+
+  #faq > div:last-of-type > div:first-of-type {
+    width: 100%;
+    margin-right: 1rem;
+  }
+
+  #faq .btn-primary {
+    margin-bottom: unset;
+    margin-top: 3rem;
+  }
+
+  #service-area {
+    padding-top: 2rem;
+  }
+
+  #service-area .line {
+    display: block;
+  }
+
+  #service-area .service-area-info {
+    flex-direction: row;
+  }
+
+  #service-area .service-area-info div:nth-child(2) {
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  #service-area .service-area-info .service-area-icon {
+    height: 9rem;
+  }
+
+  /* ---------- BOOK NOW PAGE ---------- */
+
+  #book form .card .choose-dates-wrapper {
+    flex-direction: row;
+  }
+
+  #book form .card .choose-dates-wrapper div {
+    width: 100%;
+  }
+
+  #delivery-wrapper,
+  #delivery-calendar-wrapper {
+    margin-right: 2rem;
+  }
+
+  #book form .card .choose-dates-wrapper #delivery-wrapper,
+  #book
+    form
+    .card
+    .choose-dates-wrapper
+    #pickup-wrapper
+    #book
+    form
+    #book-now-location
+    .form-group
+    input {
+    padding: 0;
+  }
+
+  #book form #book-now-location .form-group-combined {
+    display: flex;
+  }
+
+  #book form #book-now-location .form-group-combined .form-group:first-of-type {
+    flex: 250%;
+  }
+
+  #book form #book-now-location .form-group-combined .form-group:first-of-type,
+  #book form #book-now-location .form-group-combined .form-group:nth-of-type(2) {
+    padding-right: 0.5rem;
+  }
+
+  /* ---------- THANK YOU PAGE ---------- */
+  .header-thank-you .hero-content .hero-main {
+    text-align: center !important;
+  }
+
+  .header-thank-you .hero-content .hero-main button.btn-primary {
+    margin: 0;
+  }
+}

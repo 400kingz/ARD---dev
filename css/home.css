@@ -1,0 +1,116 @@
+/* -------------------- SIZES -------------------- */
+#sizes {
+  margin-top: 5rem;
+}
+
+#sizes .sizes-cards .card:first-of-type {
+  margin-bottom: 4rem;
+}
+
+#sizes .sizes-cards .card p,
+#sizes .sizes-cards-2 .card p {
+  padding-bottom: 1rem;
+}
+
+#sizes .sizes-cards-2 {
+  margin-top: 4rem;
+}
+
+/* -------------------- JUNK -------------------- */
+#junk {
+  background: url('/img/junk.jpeg') no-repeat center / cover;
+  color: white;
+}
+
+#junk:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(111, 9, 9, 0.3);
+}
+
+#junk:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#junk .junk-text {
+  z-index: 1;
+  position: relative;
+}
+
+#junk .junk-text .ul-wrap {
+  margin: 0 auto;
+}
+
+#junk .junk-text .ul-wrap ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#junk .junk-text .phone-number {
+  justify-content: center;
+  padding-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+#junk .junk-text > p:last-of-type {
+  padding-top: 2rem;
+}
+
+/* -------------------- PROJECT TYPES -------------------- */
+#project-types {
+  padding-top: 9rem;
+}
+
+#project-types .type {
+  display: flex;
+  flex-direction: column;
+}
+
+#project-types .type div {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+#project-types .type .type-text {
+  padding-top: 2rem;
+}
+
+#project-types .type .type-text h4 {
+  color: var(--secondary);
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+#project-types .type .type-img {
+  width: 100%;
+  height: 20rem;
+  border-radius: var(--border-radius);
+  position: relative;
+  box-shadow: var(--box-shadow);
+  border-bottom: var(--border-bottom);
+}
+
+#project-types .type .residential-img {
+  background: url('/img/residential.jpeg') no-repeat right / cover;
+}
+
+#project-types .type .commercial-img {
+  background: url('/img/commercial.jpeg') no-repeat left / cover;
+  margin-top: 2rem;
+}
+
+#project-types > p:last-of-type {
+  padding: 3rem 0 2rem;
+}

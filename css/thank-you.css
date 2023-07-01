@@ -1,0 +1,16 @@
+nav {
+  position: relative !important;
+}
+
+nav .logo-img {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+.header-thank-you .social {
+  display: none;
+}
+
+.process .process-steps .step {
+  padding: 1rem 0.4rem 0rem;
+}

@@ -1,0 +1,79 @@
+#book form {
+  font-weight: 400;
+}
+
+#book form .card {
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+#book form .card select,
+#book form .card input {
+  padding: 0.5rem;
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  font-size: var(--font-content);
+  margin-bottom: 1rem;
+  background-color: white;
+  appearance: none;
+  margin-top: 0.4rem;
+}
+
+#book form .card select:hover {
+  color: var(--secondary);
+  border-color: var(--secondary);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+#book form .card .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+#book form .card .form-group label {
+  margin-left: 0.1rem;
+}
+
+#book form .card .form-group input,
+#book form .card .form-group textarea {
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 0.6rem;
+  font-size: var(--font-size-1);
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
+}
+
+#book form .card .form-group input::placeholder,
+#book form .card .form-group textarea::placeholder {
+  color: var(--dark-gray);
+  font-family: var(--font-content);
+}
+
+#book form .card .form-group input:focus,
+#book form .card .form-group textarea:focus {
+  border-color: var(--secondary);
+  transition: var(--transition);
+  color: var(--secondary);
+  font-size: var(--font-size-1);
+  font-family: var(--font-content);
+}
+
+#book .note {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  font-weight: 300;
+}
+
+#book form .card .form-group #state {
+  margin-top: 0.2rem;
+  padding: 0.45rem;
+}
+
+#book form > p:last-of-type {
+  padding: 2rem 0;
+  color: var(--dark-gray);
+}
