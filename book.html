@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Reliable Dumpster</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/book.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="nav-dark">
+    <a href="/index.html" class="logo-img-dark"></a>
+    <!-- Mobile Menu -->
+    <input class="toggler" onclick="showMobileMenu()" type="checkbox">
+    <div class="mobile-menu-btn">
+      <div></div>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="close-menu-btn" onclick="hideMobileMenu()">
+        <div></div>
+      </div>
+      <ul>
+        <li><a href="/index.html" onclick="hideMobileMenu()">Home</a></li>
+        <li><a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a></li>
+        <li><a href="/" onclick="hideMobileMenu()">FAQ</a></li>
+        <li><a href="/" class="active" onclick="hideMobileMenu()">Book Now</a></li>
+      </ul>
+      <div class="social">
+        <a href="tel:+1 (714) 624-4341">
+          <div class="phone-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="facebook-logo-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="google-logo-light-icon"></div>
+        </a>
+      </div>
+      <div class="logo-img-dark" onclick="hideMobileMenu()"></div>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="desktop-menu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/dumpsters.html">Dumpsters</a></li>
+        <li><a href="/">FAQ</a></li>
+        <li><a href="/" class="active"><strong>Book Now</strong></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Header: HEADER -->
+    <header class="header-secondary container">
+      <h1>Book a Rental</h1>
+      <div class="line"></div>
+      <p class="section-subtitle">Please follow the prompts below to request your dumpster.</p>
+    </header>
+
+    <!-- Section: BOOK NOW FORM -->
+    <section id="book" class="container">
+      <form name="book-now-form" id="book-now-form" method="POST" action="/thank-you.html" netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true" data-netlify="true">
+        <input class="hidden" name="bot-field">
+        <input type="hidden" name="subject" value="NEW Rental Request" />
+
+        <!-- Contact Info -->
+        <div class="card fade-in">
+          <div class="sticky-note sticky-note-top">Contact Info</div>
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" placeholder="First and Last Name" name="full-name" required />
+          </div>
+          <div class="form-group">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" placeholder="(if commercial)" name="company-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="name@example.com" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone Number</label>
+            <input type="number" id="phone-number" placeholder="numbers only, e.g. 4134784519" name="phone-number"
+              required />
+          </div>
+        </div>
+
+        <!-- Rental Info -->
+        <div class="card fade-in">
+          <div class="sticky-note sticky-note-top">Rental Info</div>
+          <div class="form-group">
+            <label for="dumpster-size">Dumpster Size</label>
+            <select id="dumpster-size" name="dumpster-size" required>
+              <option value="15-yd Dumpster">15 Yard Dumpster</option>
+              <option value="17-yd Dumpster">17 Yard Dumpster</option>
+              <option value="20-yd Dumpster">20 Yard Dumpster</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="delivery-date">Delivery Date</label>
+            <input type="date" id="delivery-date" name="delivery-date" required>
+          </div>
+          <div class="form-group">
+            <label for="project-nature">Nature of Project</label>
+            <select id="project-nature" name="project-nature" required>
+              <option value="Cleanout">Cleanout</option>
+              <option value="Renovation">Renovation</option>
+              <option value="Construction">Construction</option>
+              <option value="Roofing Project">Roofing Project</option>
+              <option value="Heavy Materials">Heavy Materials</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Location Info -->
+        <div class="card fade-in" id="book-now-location">
+          <div class="sticky-note sticky-note-top">Location Info</div>
+          <div class="form-group">
+            <label for="street-address">Street Address</label>
+            <input type="text" id="street-address" placeholder="1 Main St" name="street-address" required />
+          </div>
+          <div class="form-group-combined">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Omaha" name="city" required />
+            </div>
+            <div class="form-group">
+              <label for="state">State</label>
+              <select id="state" name="state" required>
+                <option value="MA">MA</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="zip">Zip</label>
+              <input type="number" id="zip" placeholder="01144" name="zip" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="placement">Exact Placement</label>
+            <textarea type="text" id="placement" placeholder="dock / driveway / etc..." rows="4"
+              name="placement"></textarea>
+            <p class="note">Note: Street placement may require a permit. Please confirm with local municipality.</p>
+          </div>
+        </div>
+        <div class="recaptcha" data-netlify-recaptcha="true"></div>
+        <p class="note">No payment is required at this point.<br>Once you submit your booking request, you will be
+          contacted shortly
+          to
+          confirm your rental and will be sent instructions on how to securely pay online.</p>
+        <button class="btn-primary" type="submit"><strong>Send Request</strong></button>
+      </form>
+
+      <!-- Review Card 4 -->
+      <div class="review-card review-4 fade-in">
+        <div>
+          <div class="stars-icon"></div>
+        </div>
+        <div class="review-content">"Very efficient, friendly and accommodating. Outstanding service."</div>
+        <div>
+          <span class="hyphen">&#8212;</span>
+          <span class="review-name"><a href="https://www.homeadvisor.com/rated.ValentinSalagornik.74618019.html"
+              target="_blank">Mike S.</a></span>
+          <span class="review-location">/ Huntington, MA</span>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social">
+        <a href="tel:+1 (714) 624-4341">
+          <div class="phone-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="facebook-logo-dark-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="google-logo-light-icon"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <a href="#">
+        <div class="logo-img-dark" onclick="hideMobileMenu()"></div>
+      </a>
+       
+      <a href="tel:+1 (714) 624-4341" class="phone-number">+1 (714) 624-4341</a>
+      <ul>
+        <li><a href="/index.html" onclick="hideMobileMenu()">Home</a></li>
+        <li><a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a></li>
+        <li><a href="/" onclick="hideMobileMenu()">FAQ</a></li>
+        <li><a href="/" onclick="hideMobileMenu()">Book Now</a></li>
+      </ul>
+      <div class="social">
+        <a href="tel:+1 (714) 624-4341">
+          <div class="phone-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="facebook-logo-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="google-logo-light-icon"></div>
+        </a>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2023 A Reliable Dumpster, LLC. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/book.js"></script>
+</body>
+
+</html>

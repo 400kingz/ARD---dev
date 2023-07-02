@@ -201,7 +201,7 @@ td:hover {
 
 .header-secondary {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 8rem;
 }
 
 .container {
@@ -264,15 +264,20 @@ td:hover {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 18rem;
 }
 
 .social a {
-  padding: 0 1rem;
+  align-self: center;
+}
+
+.social a + a {
+  margin-left: 1rem;
 }
 
 .logo-scrolled {
   background: url('/img/ard-logo.png') no-repeat center / contain !important;
-  width: 9rem !important;
+  width: 12rem !important;
   height: 3rem !important;
   transition: var(--transition) ease-in-out;
 }
@@ -281,6 +286,7 @@ td:hover {
   box-shadow: 0 1px 2rem rgba(0, 0, 0, 0.3);
   background: var(--secondary);
   transition: var(--transition) ease-in-out;
+  z-index: 9999999;
 }
 
 .active {
@@ -420,7 +426,15 @@ td:hover {
 
 /* -------------------- HEADER -------------------- */
 .header {
-  background: white;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0)
+    ),
+    url('/img/truck-lg.jpeg') fixed no-repeat center / cover;
   align-items: center;
   margin-top: -9rem;
   position: relative;
@@ -437,12 +451,12 @@ td:hover {
 
 .header .hero-content {
   position: relative;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  padding-top: 13rem;
+  padding-top: 17rem;
 }
 
 .header .hero-content .phone-number {
@@ -556,87 +570,87 @@ td:hover {
 }
 
 .phone-icon {
-  background: url('/img/phone.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+  background: url('/img/phone-light.png') no-repeat center / contain;
+  height: 3rem;
+  width: 3rem;
 }
 
 .phone-light-icon {
   background: url('/img/phone-light.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .phone-light-icon:hover {
   transition: var(--transition);
-  background: url('/img/phone.png') no-repeat center / contain;
+  background: url('/img/phone-light.png') no-repeat center / contain;
 }
 
-.phone-dark-icon {
-  background: url('/img/phone-dark.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+.phone-light-icon {
+  background: url('/img/phone-light.png') no-repeat center / contain;
+  height: 3rem;
+  width: 3rem;
 }
 
-.phone-dark-icon:hover {
+.phone-light-icon:hover {
   transition: var(--transition);
-  background: url('/img/phone.png') no-repeat center / contain;
+  background: url('/img/phone-light.png') no-repeat center / contain;
 }
 
 .facebook-logo-icon {
-  background: url('/img/facebook.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+  background: url('/img/facebook-light.png') no-repeat center / contain;
+  height: 3rem;
+  width: 3rem;
 }
 
 .facebook-logo-light-icon {
   background: url('/img/facebook-light.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .facebook-logo-light-icon:hover {
   transition: var(--transition);
-  background: url('/img/facebook.png') no-repeat center / contain;
+  background: url('/img/facebook-light.png') no-repeat center / contain;
 }
 
 .facebook-logo-dark-icon {
-  background: url('/img/facebook-dark.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+  background: url('/img/facebook-light.png') no-repeat center / contain;
+  height: 3rem;
+  width: 3rem;
 }
 
 .facebook-logo-dark-icon:hover {
   transition: var(--transition);
-  background: url('/img/facebook.png') no-repeat center / contain;
+  background: url('/img/facebook-light.png') no-repeat center / contain;
 }
 
 .google-logo-icon {
-  background: url('/img/google.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+  background: url('/img/google-light.png') no-repeat center / contain;
+  height: 3rem;
+  width: 3rem;
 }
 
 .google-logo-light-icon {
   background: url('/img/google-light.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .google-logo-light-icon:hover {
   transition: var(--transition);
-  background: url('/img/google.png') no-repeat center / contain;
+  background: url('/img/google-light.png') no-repeat center / contain;
 }
 
-.google-logo-dark-icon {
-  background: url('/img/google-dark.png') no-repeat center / contain;
-  height: 2rem;
-  width: 2rem;
+.google-logo-light-icon {
+  background: url('/img/google-light.png') no-repeat center / contain;
+  height: 3rem;
+  width: 3rem;
 }
 
-.google-logo-dark-icon:hover {
+.google-logo-light-icon:hover {
   transition: var(--transition);
-  background: url('/img/google.png') no-repeat center / contain;
+  background: url('/img/google-light.png') no-repeat center / contain;
 }
 
 .dumpster-icon {
@@ -768,6 +782,14 @@ td:hover {
 /* -------------------- Navbar -------------------- */
 nav {
   display: flex;
+  position: fixed;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem -1rem;
+  background: var(--light);
+  box-shadow: 0 1px 2rem rgba(0, 0, 0, 0.3);
 }
 
 nav input[type='checkbox'] {
@@ -782,8 +804,8 @@ nav input[type='checkbox'] {
 
 nav .mobile-menu-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0.7rem;
+  right: 1rem;
   z-index: 1;
 }
 
@@ -825,6 +847,7 @@ nav .mobile-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: margin-right 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
 
 nav .mobile-menu a {
@@ -835,6 +858,8 @@ nav .mobile-menu .close-menu-btn {
   margin-left: auto;
   height: 4rem;
   width: 4rem;
+  top: 0.7rem;
+  right: 1rem;
   position: relative;
 }
 
@@ -866,6 +891,10 @@ nav .mobile-menu ul li a {
   border-bottom: 1px solid var(--secondary);
 }
 
+nav .mobile-menu ul {
+  padding: 1rem;
+}
+
 nav .mobile-menu .logo-img-dark {
   margin: 0 auto 1.5rem;
 }
@@ -874,9 +903,16 @@ input[type='checkbox']:checked ~ .mobile-menu {
   -moz-transition: all var(--transition) ease-in-out;
   -webkit-transition: all var(--transition) ease-in-out;
   -o-transition: all var(--transition) ease-in-out;
-  transition: all var(--transition) ease-in-out;
-  -webkit-box-shadow: 5px 0 300px 700px rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 0 300px 700px rgba(0, 0, 0, 0.4);
+  transition: all .8s ease-in-out;
+  -webkit-box-shadow: 5px 0 300px 700px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 0 300px 700px rgba(0, 0, 0, 0.5);
+}
+
+input[type='checkbox'] ~ .mobile-menu {
+  -moz-transition: all var(--transition) ease-in-out;
+  -webkit-transition: all var(--transition) ease-in-out;
+  -o-transition: all var(--transition) ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .desktop-menu {

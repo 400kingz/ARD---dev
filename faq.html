@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Reliable Dumpster</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="nav-dark">
+    <a href="/index.html" class="logo-img-dark"></a>
+    <!-- Mobile Menu -->
+    <input class="toggler" onclick="showMobileMenu()" type="checkbox">
+    <div class="mobile-menu-btn">
+      <div></div>
+    </div>
+
+    <div class="mobile-menu">
+      <div class="close-menu-btn" onclick="hideMobileMenu()">
+        <div></div>
+      </div>
+      <ul>
+        <li><a href="/index.html" onclick="hideMobileMenu()">Home</a></li>
+        <li><a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a></li>
+        <li><a href="/" onclick="hideMobileMenu()" class="active">FAQ</a></li>
+        <li><a href="/" onclick="hideMobileMenu()">Book Now</a></li>
+      </ul>
+      <div class="social">
+        <a href="tel:+1 (714) 624-4341">
+          <div class="phone-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="facebook-logo-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="google-logo-light-icon"></div>
+        </a>
+      </div>
+      <div class="logo-img-dark" onclick="hideMobileMenu()"></div>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="desktop-menu">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/dumpsters.html">Dumpsters</a></li>
+        <li><a href="/" class="active">FAQ</a></li>
+        <li><a href="/" class="book-now-link"><strong>Book Now</strong></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Header: HEADER -->
+    <header class="header-secondary container">
+      <h1>FAQ</h1>
+      <div class="line"></div>
+      <div class="section-subtitle">We are here to make your rental process go as smooth as possible.</div>
+    </header>
+
+    <!-- FAQ -->
+    <section id="faq" class="container fade-in">
+      <input type="radio" name="accordion" id="faq1" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq1">How do I pay?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>Once your request is confirmed, you will receive an invoice with instructions on how
+            to pay.<br>Payment is fast and secure, and must be received prior to the dumpster delivery.</p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="faq8" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq8">Can you deliver same day?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>We strive to meet and exceed our customer's expectations.<br>Same-day delivery will depend on availability
+            and location, but most likely &#8212; yes, we will be able to drop-off the container the same day.</p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="faq7" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq7">What can I put into the dumpster?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>Most residential waste is acceptable. See below which materials are not accepted as well as which require
+            an additional disposal fee.</p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="faq2" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq2">Are there any additional fees?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>Some junk may require an additional fee to haul away.<br>Check the following list for
+            examples:</p>
+          <ul>
+            <li>
+              <div class="arrow-right-icon"></div>
+              Mattresses
+            </li>
+            <li>
+              <div class="arrow-right-icon"></div>
+              Box springs
+            </li>
+            <li>
+              <div class="arrow-right-icon"></div>
+              CFCs (A/C freezers,
+            </li>
+            <li>
+              <div class="arrow-right-icon invisible"></div>
+              dehumidifiers, fridges, etc)
+            </li>
+            <li>
+              <div class="arrow-right-icon"></div>
+              TVs and computer monitors
+            </li>
+            <li>
+              <div class="arrow-right-icon"></div>
+              Propane tanks
+            </li>
+            <li>
+              <div class="arrow-right-icon"></div>
+              Tires
+            </li>
+            <li>
+              <div class="arrow-right-icon"></div>
+              Fluorescent bulbs
+            </li>
+            <li>
+              <div class="arrow-right-icon"></div>
+              Batteries
+            </li>
+          </ul>
+          <p>ABSOLUTELY NO ASBESTOS WILL BE ACCEPTED.</p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="faq3" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq3">Which materials are unacceptable?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>The following items will NOT be accepted.</p>
+          <ul>
+            <li>
+              <div class="x-icon"></div>
+              Asbestos
+            </li>
+            <li>
+              <div class="x-icon"></div>
+              Chemicals
+            </li>
+            <li>
+              <div class="x-icon"></div>
+              Lead
+            </li>
+            <li>
+              <div class="x-icon"></div>
+              Oils
+            </li>
+            <li>
+              <div class="x-icon"></div>
+              Solvents
+            </li>
+            <li>
+              <div class="x-icon"></div>
+              Flammable items
+            </li>
+            <li>
+              <div class="x-icon"></div>
+              Toxic materials
+            </li>
+          </ul>
+          <p>If in doubt, call us at <a href="tel:+1 (714) 624-4341">+1 (714) 624-4341</a>.</p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="faq5" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq5">Can I extend the rental after 7 days?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>Yes, you can extend your rental for $20/day. It's absolutely hassle-free.<br>Just call us to discuss
+            availability and pricing.</p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="faq6" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq6">Are there any discounts or deals?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>Please follow us on <a href="/"
+              target="_blank">social media</a>,
+            to be informed of any ongoing promotions and get the best deal, or call Val at <a
+              href="tel:+1 (714) 624-4341">+1 (714) 624-4341</a>.
+          </p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="faq4" />
+      <div class="faq-card">
+        <label class="faq-title" for="faq4">Anything else important to know?</label>
+        <label class="faq-close" for="acc-close"></label>
+        <div class="faq-content">
+          <p>Extremely heavy materials such as rock, dirt, concrete, asphalt, and brick should not be mixed with regular
+            trash.</p>
+        </div>
+      </div>
+      <input type="radio" name="accordion" id="acc-close" />
+      <div>
+        <div>
+          <p>If you have any additional questions, don't hesitate to reach out to us.</p>
+
+          <!-- Social Links -->
+          <div class="social">
+            <a href="tel:+1 (714) 624-4341">
+              <div class="phone-light-icon"></div>
+            </a>
+            <a href="/" target="_blank">
+              <div class="facebook-logo-dark-icon"></div>
+            </a>
+            <a href="/" target="_blank">
+              <div class="google-logo-light-icon"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Review Card 5 -->
+        <div class="review-card review-5 fade-in slide-in from-right">
+          <div>
+            <div class="stars-icon"></div>
+          </div>
+          <div class="review-content">"Highly recommend him. He had the dumpster here in time, placed at my convenience
+            and highly professional."</div>
+          <div>
+            <span class="hyphen">&#8212;</span>
+            <span class="review-name"><a href="https://www.homeadvisor.com/rated.ValentinSalagornik.74618019.html"
+                target="_blank">Shirley T.</a></span>
+            <span class="review-location">/ Chicopee, MA</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="/"><button class="btn-primary"><strong>Book Now</strong></button></a>
+    </section>
+
+    <!-- Service Area -->
+    <section id="service-area" class="container bg-dark">
+      <h2>Service Area</h2>
+      <div class="line"></div>
+      <p class="section-subtitle"></p>
+      <div class="service-area-info">
+        <div class="service-area-icon fade-in slide-in from-left"></div>
+        <div>
+          <p>We are proud and honored to provide dumpster rental services to the areas listed below:<br>Westfield, West
+            Springfield, Agawam, Huntington, Chester, Blandford, Southwick, Chicopee, Longmeadow, Springfield, and
+            Montgomery.</p>
+          <p>Additional fuel fee may apply for the following areas:<br>Becket, Otis, Tolland, Granville, Southampton,
+            Holyoke, East Longmeadow, and Ludlow.</p>
+        </div>
+      </div>
+      <p>If your location is outside our service area, we might still be able to help.<br>Just <a
+          href="tel:+1 (714) 624-4341">give us a call</a>, and we'd be happy to discuss that.</p>
+      <a href="/dumpsters.html"><button>More Info</button></a>
+    </section>
+
+    <!-- Google Reviews -->
+    <section id="reviews" class="container">
+      <h2>Testimonials</h2>
+      <div class="line"></div>
+      <div class="section-subtitle">We communicate respect and execute excellence.</div>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+      <div class="elfsight-app-98b640a9-5da1-407b-80ef-ecfc9bcff1dc fade-in"></div>
+      <p>If you have benefited from our services, we would be extremely honored if you would take a few minutes to
+        write a positive review.<br><a
+          href="https://www.google.com/search?hl=en-US&gl=us&q=Fairview+Containers&ludocid=15391197964984227400&lsig=AB86z5XJO1YeFokiMstR8NE0aCi3#lrd=0x407b59661d1349ed:0xd5988500ca999648,3"
+          target="_blank">You
+          can do that here</a>. Thank you!
+      </p>
+      <div class="line"></div>
+      <p>Our customers mean<br>the world to us!</p>
+      <a href="/"><button class="btn-primary fade-in"><strong>Book Now</strong></button></a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+      <a href="#">
+        <div class="logo-img-dark" onclick="hideMobileMenu()"></div>
+      </a>
+       
+      <a href="tel:+1 (714) 624-4341" class="phone-number"> +1 (714) 624-4341
+      </a>
+      <ul>
+        <li><a href="/index.html" onclick="hideMobileMenu()">Home</a></li>
+        <li><a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a></li>
+        <li><a href="/" onclick="hideMobileMenu()">FAQ</a></li>
+        <li><a href="/" onclick="hideMobileMenu()">Book Now</a></li>
+      </ul>
+      <div class="social">
+        <a href="tel:+1 (714) 624-4341">
+          <div class="phone-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="facebook-logo-light-icon"></div>
+        </a>
+        <a href="/" target="_blank">
+          <div class="google-logo-light-icon"></div>
+        </a>
+      </div>
+      <div class="copyright">
+        <p>
+          &copy; 2023 A Reliable Dumpster, LLC. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

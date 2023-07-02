@@ -107,7 +107,7 @@
   }
 
   .header-secondary {
-    margin-top: 9rem;
+    margin-top: 5rem;
   }
 
   .header-thank-you .hero-content {
@@ -211,7 +211,7 @@
 
   nav .logo-img,
   nav .logo-img-dark {
-    width: 9rem;
+    width: 20rem;
     height: 7rem;
     margin-left: 10%;
   }
@@ -235,13 +235,14 @@
 
   nav .desktop-menu ul li a {
     padding: 1rem 1.8rem;
-    color: black;
     border-radius: 10px;
+    color: black;
   }
+
 
   nav .desktop-menu ul li a:hover {
     background-color: var(--primary);
-    color: pink;
+    color: var(--secondary);
     transition: 0.6s ease-in-out;
     border-radius: 20px;
   }
@@ -258,8 +259,16 @@
 
   /* Header */
   .header {
-    background: white;
-    url('/img/hero.jpg') no-repeat right / cover;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0)
+      ),
+      url('/img/photo-1.jpeg') fixed no-repeat center / cover;
+    
   }
 
   .header .hero-content {
