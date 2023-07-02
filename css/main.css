@@ -32,7 +32,7 @@
   --box-shadow: 0px 6px 15px var(--gray);
   --font-size-1: 1rem;
   --font-heading: 'Rubik', sans-serif;
-  --font-content: 'Roboto', sans-serif;
+  --font-content: 'Montserrat', sans-serif;
 }
 
 ::-moz-selection {
