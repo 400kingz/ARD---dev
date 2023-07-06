@@ -31,7 +31,7 @@
 }
 
 #faq .faq-card .faq-title:hover {
-  color: var(--secondary);
+  color: var(--primary);
   transition: var(--transition);
 }
 
@@ -85,7 +85,7 @@ input:checked + .faq-card {
 
 input:checked + .faq-card .faq-title {
   border-bottom: 1px solid var(--gray);
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 input:checked + .faq-card .faq-content,
