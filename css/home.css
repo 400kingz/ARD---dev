@@ -169,6 +169,8 @@ footer .social {
   font-weight: 600;
   text-align: center;
   margin-top: 1rem;
+  /* add a bottom shadow */
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 
