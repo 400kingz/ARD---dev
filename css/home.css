@@ -135,8 +135,8 @@ footer .social {
   height: 100%;
   background-color: #fff;
   z-index: 99999999999999;
-  transition: transform 1.2s ease-in-out;
-  transform: translateY(0%);
+  transition: transform 1.7s ease-in-out;
+  transform: translateX(0%);
   pointer-events: none;
 }
 
@@ -154,14 +154,14 @@ footer .social {
 
 /* slide the iframe to the left on .preloader.hide */
 .preloader.hide iframe {
-  transform: translateX(-100%);
-  transition: transform 0.4s ease-in-out;
+  transform: translateX(-300%);
+  transition: transform 0.5s ease-in;
 }
 
 /* slide the h1 to the left on .preloader.hide */
 .preloader.hide h1 {
-  transform: translateX(-100%);
-  transition: transform 0.7s ease-in-out;
+  transform: translateX(-300%);
+  transition: transform 1.3s ease-in-out;
 }
 
 .loadingtext {
