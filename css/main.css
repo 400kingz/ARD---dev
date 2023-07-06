@@ -195,7 +195,7 @@ td:hover {
 
 .btn-primary:hover {
   background-color: var(--secondary);
-  color: pink;
+  color: var(--primary);
   border: 1px solid var(--primary-transparent);
 }
 

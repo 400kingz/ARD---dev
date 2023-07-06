@@ -114,3 +114,77 @@
 #project-types > p:last-of-type {
   padding: 3rem 0 2rem;
 }
+
+.disclaimer {
+  opacity: .7;
+  margin-top: 2rem;
+}
+
+footer .social {
+  margin-bottom: 1rem;
+}
+
+/* Preloader container styles */
+.preloader {
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 99999999999999;
+  transition: transform 1.2s ease-in-out;
+  transform: translateY(0%);
+  pointer-events: none;
+}
+
+/* Loader styles */
+.preloader .loader {
+  position: relative;
+  margin: auto;
+}
+
+
+/* Swipe-up animation */
+.preloader.hide {
+  transform: translateX(-100%);
+}
+
+/* slide the iframe to the left on .preloader.hide */
+.preloader.hide iframe {
+  transform: translateX(-100%);
+  transition: transform 0.7s ease-in-out;
+}
+
+/* slide the h1 to the left on .preloader.hide */
+.preloader.hide h1 {
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.loadingtext {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
