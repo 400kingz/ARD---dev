@@ -103,7 +103,7 @@
   </div>
 </div>
 
-<body>
+<body id="content">
 
   <div class="best">Looking for the best dumpster rental services near Omaha, NE? Look no further!
     A Reliable Dumpster is your trusted choice for all your dumpster rental needs in Omaha and the surrounding cities.
@@ -415,10 +415,10 @@
 
   <!-- Scripts -->
   <script>
-    window.addEventListener('load', function () {
-      setTimeout(function () {
-        document.querySelector('.preloader').classList.add('hide');
-      }, 1500);
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".preloader");
+      loader.className += " hide";
+      
     });
   </script>
 
