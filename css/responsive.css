@@ -267,8 +267,13 @@
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0)
       ),
-      url('/img/photo-1.jpeg') fixed no-repeat center / cover;
+      url('/img/A-Reliable-Dumpster-Omaha-Nebraska-Hero-Image.webp') fixed no-repeat center / cover;
     
+  }
+
+  .header h1 {
+    color: white;
+    font-size: 2rem;
   }
 
   .header .hero-content {
