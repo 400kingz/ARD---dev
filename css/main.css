@@ -1,5 +1,5 @@
 /* -------------------- Imports -------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 /* -------------------- Resets -------------------- */
@@ -31,7 +31,7 @@
   --border-bottom: 3px solid var(--secondary);
   --box-shadow: 0px 6px 15px var(--gray);
   --font-size-1: 1rem;
-  --font-heading: 'Rubik', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
   --font-content: 'Montserrat', sans-serif;
 }
 
@@ -72,15 +72,18 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  font-family: var(--font-heading);
   text-transform: uppercase;
 }
 
 h3 {
+  font-family: var(--font-heading);
   font-size: 1.3rem;
   text-transform: uppercase;
 }
 
 h4 {
+  font-family: var(--font-heading);
   text-transform: uppercase;
 }
 
@@ -309,6 +312,7 @@ td:hover {
 }
 
 .dimensions {
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--primary);
@@ -328,7 +332,7 @@ td:hover {
   border: 1px solid var(--primary);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  font-family: 'Rubik', sans-serif;
+  font-family: var(--font-heading);
   white-space: nowrap;
 }
 
@@ -807,6 +811,7 @@ nav {
   padding: 1rem -1rem;
   background: var(--light);
   box-shadow: 0 1px 2rem rgba(0, 0, 0, 0.3);
+  font-family: var(--font-heading);
 }
 
 nav input[type='checkbox'] {

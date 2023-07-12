@@ -1,354 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Reliable Dumpster</title>
+    <link
+      rel="A Reliable Dumpster Favicon"
+      href="img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Add favicon.ico -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/73f6464735.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Reliable Dumpster</title>
-  <link rel="A Reliable Dumpster Favicon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <!-- Add favicon.ico -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/73f6464735.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-</head>
-
-<style>
-  
-</style>
-
-<div class="preloader">
-  <div class="loader">
-    <iframe src="https://lottie.host/?file=461e7d1e-62e7-49d3-b963-48073bd10a14/H4ImGVNF21.json"></iframe>
-    <h1 class="loadingtext">
-      Loading Dumpsters...
-    </h1>
-  </div>
-</div>
-
-<body>
-
-  <div class="best">Looking for the best dumpster rental services near Omaha, NE? Look no further!
-    A Reliable Dumpster is your trusted choice for all your dumpster rental needs in Omaha and the surrounding cities.
-    We offer a wide range of dumpster sizes to accommodate any project, whether it's a home renovation, construction
-    site, or commercial cleanout.
-    With our prompt delivery and pickup, competitive prices, and exceptional customer service, we guarantee a
-    hassle-free experience.
-    Contact us at (insert phone number) for the best dumpster rental services in Omaha and nearby cities.
+  <div class="preloader">
+    <div class="loader">
+      <iframe
+        src="https://lottie.host/?file=461e7d1e-62e7-49d3-b963-48073bd10a14/H4ImGVNF21.json"
+      ></iframe>
+      <h1 class="loadingtext">Loading Dumpsters...</h1>
+    </div>
   </div>
 
-  <!-- Preloader -->
-
-  <!-- Navbar -->
-  <nav>
-    <a href="#" class="logo-img"></a>
-    <!-- Mobile Menu -->
-    <input class="toggler" onclick="showMobileMenu()" type="checkbox">
-    <div class="mobile-menu-btn">
-      <div></div>
+  <body>
+    <div class="best">
+      Looking for the best dumpster rental services near Omaha, NE? Look no
+      further! A Reliable Dumpster is your trusted choice for all your dumpster
+      rental needs in Omaha and the surrounding cities. We offer a wide range of
+      dumpster sizes to accommodate any project, whether it's a home renovation,
+      construction site, or commercial cleanout. With our prompt delivery and
+      pickup, competitive prices, and exceptional customer service, we guarantee
+      a hassle-free experience. Contact us at (insert phone number) for the best
+      dumpster rental services in Omaha and nearby cities.
     </div>
 
-    <div class="mobile-menu">
-      <div class="close-menu-btn" onclick="hideMobileMenu()">
+    <!-- Navbar -->
+    <nav>
+      <a href="#" class="logo-img"></a>
+      <!-- Mobile Menu -->
+      <input class="toggler" onclick="showMobileMenu()" type="checkbox" />
+      <div class="mobile-menu-btn">
         <div></div>
       </div>
-      <ul>
-        <li><a href="#" onclick="hideMobileMenu()" class="active">Home</a></li>
-        <li><a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a></li>
-        <li><a href="/faq.html" onclick="hideMobileMenu()">FAQ</a></li>
-        <li><a href="tel:+1 (402) 210-4777" onclick="hideMobileMenu()">Call Now</a></li>
-      </ul>
 
-      <!-- Social Link -->
-      <div class="social">
-        <a href="tel:+1 (402) 210-4777 ">
-          <div class="phone-light-icon"></div>
-        </a>
-        <a href="/" target="_blank">
-          <div class="facebook-logo-light-icon"></div>
-        </a>
-        <a href="/" target="_blank">
-          <div class="google-logo-light-icon"></div>
-        </a>
-      </div>
-      <div class="logo-img-dark" onclick="hideMobileMenu()"></div>
-    </div>
+      <div class="mobile-menu">
+        <div class="close-menu-btn" onclick="hideMobileMenu()">
+          <div></div>
+        </div>
+        <ul>
+          <li>
+            <a href="#" onclick="hideMobileMenu()" class="active">Home</a>
+          </li>
+          <li>
+            <a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a>
+          </li>
+          <li><a href="/faq.html" onclick="hideMobileMenu()">FAQ</a></li>
+          <li>
+            <a href="tel:+1 (402) 210-4777" onclick="hideMobileMenu()"
+              >Call Now</a
+            >
+          </li>
+        </ul>
 
-    <!-- Desktop Menu -->
-    <div class="desktop-menu">
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="/dumpsters.html">Dumpsters</a></li>
-        <li><a href="/faq.html">FAQ</a></li>
-        <li><a href="tel:+1 (402) 210-4777" class="book-now-link"><strong>Call Now</strong></a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <main>
-    <!-- Header: HEADER -->
-    <header class="header container ">
-      <div class="hero-content">
-        <div class="hero-main">
-          <h1>Dumpster Rentals Done Right. <br> Choose A Reliable Dumpster!</h1>
-          <p>Serving Omaha, Papillion, Bellevue, La Vista, and Ralston. </p>
-          <a href="/dumpsters.html"><button>More Info</button></a>
-          <a href="tel:+1 (402) 210-4777"><button class="btn-primary"><strong>Call Now</strong></button></a>
+        <!-- Social Link -->
+        <div class="social">
+          <a href="tel:+1 (402) 210-4777 ">
+            <div class="phone-light-icon"></div>
+          </a>
+          <a href="/" target="_blank">
+            <div class="facebook-logo-light-icon"></div>
+          </a>
+          <a href="/" target="_blank">
+            <div class="google-logo-light-icon"></div>
+          </a>
         </div>
-        <a href="tel:+1 (402) 210-4777 " class="phone-number">
-          <div class="phone-light-icon"></div>
-          +1 (402) 210-4777
-        </a>
-      </div>
-
-      <!-- Review Card 1 -->
-      <div class="review-card review-1 fade-in">
-        <div>
-          <div class="stars-icon"></div>
-        </div>
-        <div class="review-content">"Excellent experience with A Reliable Dumpster. Fast delivery and very competitive
-          pricing."</div>
-        <div>
-
-          <span class="hyphen">&#8212;</span>
-          <span class="review-name"><a href="" target="_blank">A Gutter Company</a></span>
-          <span class="review-location">/ Omaha, NE</span>
-        </div>
-      </div>
-    </header>
-
-    <!--Waves end-->
-
-    <!-- Section: SIZES -->
-    <section id="sizes" class="container">
-      <h2>Dumpster Sizes</h2>
-      <div class="line"></div>
-      <p class="section-subtitle">A Reliable Dumpster offers the perfect small to mid-size container for your
-        residential or commercial needs.
-      </p>
-      <div class="sizes-cards">
-        <div class="card slide-in from-left fade-in">
-          <div class="sticky-note sticky-note-top">10 Yard Container</div>
-          <div class="dumpster-icon fade-in-and-zoom-in"></div>
-          <div class="dimensions">10' x 7' x 4'</div>
-          <p>4-5 pickup truck loads</p>
-          <p>Perfect for small to mid-size home cleanup and remodeling jobs.
-          </p>
-          <a href="/dumpsters.html"><button>More Info</button></a>
-          <a href="tel:+1 (402) 210-4777"><button class="btn-primary"><strong>Call Now</strong></button></a>
-        </div>
-        <div class="card slide-in from-right fade-in">
-          <div class="sticky-note sticky-note-top">12 Yard Container</div>
-          <div class="dumpster-icon-12 fade-in-and-zoom-in "></div>
-          <div class="dimensions">12' x 7' x 4'</div>
-          <p>5-6 pickup
-            truck loads</p>
-          <p>Ideal for mid-sized construction & home improvement projects as well as larger clean out jobs.
-          </p>
-          <a href="/dumpsters.html"><button>More Info</button></a>
-          <a href="tel:+1 (402) 210-4777"><button class="btn-primary"><strong>Call Now</strong></button></a>
-        </div>
-      </div>
-      <div class="sizes-cards-2">
-        <div class="card fade-in">
-          <div class="sticky-note sticky-note-top">15 Yard Container</div>
-          <div class="dumpster-icon-15 fade-in-and-zoom-in"></div>
-          <div class="dimensions">12' x 7' x 5'</div>
-          <p>6-8 pickup truck loads</p>
-          <p>Great for larger cleanout and renovation projects.
-          </p>
-          <a href="/dumpsters.html"><button>More Info</button></a>
-          <a href="tel:+1 (402) 210-4777"><button class="btn-primary"><strong>Call Now</strong></button></a>
-        </div>
-      </div>
-      <!-- add a disclaimer saying these dumpsters are not the same color as they appear -->
-      <div class="disclaimer">
-        <p>Disclaimer: The dumpster colors shown above are not the same as the actual dumpster colors.</p>
-      </div>
-    </section>
-
-    <!-- Section: PROCESS -->
-    <section class="process container bg-dark">
-      <h2>How It Works</h2>
-      <div class="line"></div>
-      <p class="section-subtitle">Renting a dumpster is quick and easy.</p>
-      <div class="process-steps">
-        <div class="step fade-in">
-          <div class="step-icon step-1-icon"></div>
-          <h4>Call or Click</h4>
-          <p>Request the right container for your project and let us know the time and location.</p>
-        </div>
-        <div class="step fade-in">
-          <div class="step-icon step-2-icon"></div>
-          <h4>Confirmation</h4>
-          <p>We will get back to you promptly with confirmation and payment instructions.</p>
-        </div>
-        <div class="step fade-in">
-          <div class="step-icon step-3-icon"></div>
-          <h4>Execution</h4>
-          <p>Your container will be delivered with the highest level of professionalism.</p>
-        </div>
-        <div class="step fade-in">
-          <div class="step-icon step-4-icon"></div>
-          <h4>Review</h4>
-          <p>We genuinely care about our clients and strive to earn your respect and trust.</p>
-        </div>
-      </div>
-      <a href="/dumpsters.html"><button>More Info</button></a>
-    </section>
-
-    <!-- Section: JUNK-->
-    <section id="junk" class="container">
-      <div class="junk-text">
-        <h3>We Take Just About Everything</h3>
-        <div class="line-light"></div>
-        <p class="section-subtitle">Some examples of the junk we haul away include:</p>
-        <div class="ul-wrap">
-          <ul>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Trash
-            </li>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Piping and Plumbing Fixtures
-            </li>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Yard Waste
-            </li>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Foreclosure Clean Outs
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Mattresses
-            </li>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Construction Waste
-            </li>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Television and Electronics
-            </li>
-            <li>
-              <div class="check-mark-light-icon"></div>
-              Furniture
-            </li>
-          </ul>
-        </div>
-        <p>If you are in doubt what materials are acceptable, visit the <a href="/faq.html">FAQ PAGE</a> or give us a
-          call today!</p>
-        <a href="tel:+1 (402) 210-4777 " class="phone-number">
-          <div class="phone-light-icon"></div>
-          +1 (402) 210-4777
-        </a>
-      </div>
-
-      <!-- Review Card 2 -->
-      <div class="review-card review-2 fade-in">
-        <div>
-          <div class="stars-icon"></div>
-        </div>
-        <div class="review-content">"Extremely pleasant from beginning to end. The size of dumpster was just right and
-          being able to keep it for up to a week, was awesome."</div>
-        <div>
-          <span class="hyphen">&#8212;</span>
-          <span class="review-name"><a href="/" target="_blank">Kimberly C.</a></span>
-          <span class="review-location">/ Omaha, NE</span>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Section: PROJECT TYPES -->
-    <section id="project-types" class="container bg-dark">
-      <h3>We accomodate all projects</h3>
-      <div class="line"></div>
-      <p class="section-subtitle">We are there when and where you need us!</p>
-      <div class="type">
-        <div class="type-img residential-img slide-in from-left">
-          <span class="sticky-note">Residential</span>
-        </div>
-        <div class="type-text type-text-1 fade-in slide-in from-right">
-          <p>We have dumpster rentals perfect for residential renovations, remodels, or
-            small
-            construction projects. It will fit comfortably in your driveway and fit all the junk you don't need. Whether
-            you need a dumpster rental in Omaha or surrounding areas, you can rely on our customer-focused
-            professionals to help you every step of the way. In
-            addition, the
-            dumpster will not annoy your neighbors with bright colors, and yet will be sturdy enough to handle most
-            kinds of debris!</p>
-        </div>
-      </div>
-      <div class="type">
-        <div class="type-img commercial-img slide-in from-right">
-          <span class="sticky-note">Commercial</span>
-        </div>
-        <div class="type-text type-text-2 fade-in slide-in from-left">
-          <p>Our roll-off dumpsters are ideal for construction projects. You can confidently rely on
-            our prompt deliveries and professional, hassle-free service for your next dumpster rental. Our containers
-            fit
-            perfectly in any space with minimal impact to your job site. From waste removal to business expansion
-            projects, see why contractors come to us when looking for a dumpster rental in the Omaha area.</p>
-        </div>
-      </div>
-      <p>We know how important it is to have a quality disposal container. We'll be there, rain or shine, to place your
-        rental exactly where you need it.</p>
-      <a href="tel:+1 (402) 210-4777"><button class="btn-primary"><strong>Call Now</strong></button></a>
-
-    </section>
-
-    <!-- Footer -->
-    <footer class="container">
-      <a href="#">
         <div class="logo-img-dark" onclick="hideMobileMenu()"></div>
-      </a>
-      <a href="tel:+1 (402) 210-4777 " class="phone-number"> +1 (402) 210-4777
-      </a>
-      <ul>
-        <li><a href="/index.html" onclick="hideMobileMenu()">Home</a></li>
-        <li><a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a></li>
-        <li><a href="/faq.html" onclick="hideMobileMenu()">FAQ</a></li>
-        <li><a href="tel:+1 (402) 210-4777" onclick="hideMobileMenu()">Call Now</a></li>
-      </ul>
-      <div class="social">
-        <a href="tel:+1 (402) 210-4777 ">
-          <div class="phone-light-icon"></div>
-        </a>
-        <a href="/" target="_blank">
-          <div class="facebook-logo-light-icon"></div>
-        </a>
-        <a href="/" target="_blank">
-          <div class="google-logo-light-icon"></div>
-        </a>
       </div>
 
-      <div class="copyright">
-        <p>
-          &copy; 2023 A Reliable Dumpster, LLC. All Rights Reserved.
+      <!-- Desktop Menu -->
+      <div class="desktop-menu">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="/dumpsters.html">Dumpsters</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li>
+            <a href="tel:+1 (402) 210-4777" class="book-now-link"
+              ><strong>Call Now</strong></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Header: HEADER -->
+      <header class="header container">
+        <div class="hero-content">
+          <div class="hero-main">
+            <h1>
+              Dumpster Rentals Done Right. <br />
+              Choose A Reliable Dumpster!
+            </h1>
+            <p>Serving Omaha, Papillion, Bellevue, La Vista, and Ralston.</p>
+            <a href="/dumpsters.html">
+              <button class="more-info">More Info</button>
+            </a>
+            <a href="tel:+1 (402) 210-4777"
+              ><button class="btn-primary"><strong>Call Now</strong></button></a
+            >
+          </div>
+          <a href="tel:+1 (402) 210-4777 " class="phone-number">
+            <div class="phone-light-icon"></div>
+            +1 (402) 210-4777
+          </a>
+        </div>
+
+        <!-- Review Card 1 -->
+        <div class="review-card review-1 fade-in">
+          <div>
+            <div class="stars-icon"></div>
+          </div>
+          <div class="review-content">
+            "Excellent experience with A Reliable Dumpster. Fast delivery and
+            very competitive pricing."
+          </div>
+          <div>
+            <span class="hyphen">&#8212;</span>
+            <span class="review-name"
+              ><a href="" target="_blank">A Renovation Company</a></span
+            >
+            <span class="review-location">/ Omaha, NE</span>
+          </div>
+        </div>
+      </header>
+
+      <!--Waves end-->
+
+      <!-- Section: SIZES -->
+      <section id="sizes" class="container">
+        <h2>Dumpster Sizes</h2>
+        <div class="line"></div>
+        <p class="section-subtitle">
+          A Reliable Dumpster offers the perfect small to mid-size container for
+          your residential or commercial needs.
         </p>
-      </div>
-    </footer>
-  </main>
+        <div class="sizes-cards">
+          <div class="card slide-in from-left fade-in">
+            <div class="sticky-note sticky-note-top">10 Yard Container</div>
+            <div class="dumpster-icon fade-in-and-zoom-in"></div>
+            <div class="dimensions">10' x 7' x 4'</div>
+            <p>4-5 pickup truck loads</p>
+            <p>
+              Perfect for small to mid-size home cleanup and remodeling jobs.
+            </p>
+            <a href="/dumpsters.html"><button>More Info</button></a>
+            <a href="tel:+1 (402) 210-4777"
+              ><button class="btn-primary"><strong>Call Now</strong></button></a
+            >
+          </div>
+          <div class="card slide-in from-right fade-in">
+            <div class="sticky-note sticky-note-top">12 Yard Container</div>
+            <div class="dumpster-icon-12 fade-in-and-zoom-in"></div>
+            <div class="dimensions">12' x 7' x 4'</div>
+            <p>5-6 pickup truck loads</p>
+            <p>
+              Ideal for mid-sized construction & home improvement projects as
+              well as larger clean out jobs.
+            </p>
+            <a href="/dumpsters.html"><button>More Info</button></a>
+            <a href="tel:+1 (402) 210-4777"
+              ><button class="btn-primary"><strong>Call Now</strong></button></a
+            >
+          </div>
+        </div>
+        <div class="sizes-cards-2">
+          <div class="card fade-in">
+            <div class="sticky-note sticky-note-top">15 Yard Container</div>
+            <div class="dumpster-icon-15 fade-in-and-zoom-in"></div>
+            <div class="dimensions">12' x 7' x 5'</div>
+            <p>6-8 pickup truck loads</p>
+            <p>Great for larger cleanout and renovation projects.</p>
+            <a href="/dumpsters.html"><button>More Info</button></a>
+            <a href="tel:+1 (402) 210-4777"
+              ><button class="btn-primary"><strong>Call Now</strong></button></a
+            >
+          </div>
+        </div>
+        <!-- add a disclaimer saying these dumpsters are not the same color as they appear -->
+        <div class="disclaimer">
+          <p>
+            Disclaimer: The dumpster colors shown above are not the same as the
+            actual dumpster colors.
+          </p>
+        </div>
+      </section>
 
-  <!-- Scripts -->
-  <script>
-    window.addEventListener('load', function () {
-      setTimeout(function () {
-        document.querySelector('.preloader').classList.add('hide');
-      }, 2000);
-    });
-  </script>
+      <!-- Section: PROCESS -->
+      <section class="process container bg-dark">
+        <h2>How It Works</h2>
+        <div class="line"></div>
+        <p class="section-subtitle">Renting a dumpster is quick and easy.</p>
+        <div class="process-steps">
+          <div class="step fade-in">
+            <div class="step-icon step-1-icon"></div>
+            <h4>Call or Click</h4>
+            <p>
+              Request the right container for your project and let us know the
+              time and location.
+            </p>
+          </div>
+          <div class="step fade-in">
+            <div class="step-icon step-2-icon"></div>
+            <h4>Confirmation</h4>
+            <p>
+              We will get back to you promptly with confirmation and payment
+              instructions.
+            </p>
+          </div>
+          <div class="step fade-in">
+            <div class="step-icon step-3-icon"></div>
+            <h4>Execution</h4>
+            <p>
+              Your container will be delivered with the highest level of
+              professionalism.
+            </p>
+          </div>
+          <div class="step fade-in">
+            <div class="step-icon step-4-icon"></div>
+            <h4>Review</h4>
+            <p>
+              We genuinely care about our clients and strive to earn your
+              respect and trust.
+            </p>
+          </div>
+        </div>
+        <a href="/dumpsters.html"><button>More Info</button></a>
+      </section>
 
-  <script src="js/main.js"></script>
-</body>
+      <!-- Section: JUNK-->
+      <section id="junk" class="container">
+        <div class="junk-text">
+          <h3>We Take Just About Everything</h3>
+          <div class="line-light"></div>
+          <p class="section-subtitle">
+            Some examples of the junk we haul away include:
+          </p>
+          <div class="ul-wrap">
+            <ul>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Trash
+              </li>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Piping and Plumbing Fixtures
+              </li>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Yard Waste
+              </li>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Foreclosure Clean Outs
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Mattresses
+              </li>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Construction Waste
+              </li>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Television and Electronics
+              </li>
+              <li>
+                <div class="check-mark-light-icon"></div>
+                Furniture
+              </li>
+            </ul>
+          </div>
+          <p>
+            If you are in doubt what materials are acceptable, visit the
+            <a href="/faq.html">FAQ PAGE</a> or give us a call today!
+          </p>
+          <a href="tel:+1 (402) 210-4777 " class="phone-number">
+            <div class="phone-light-icon"></div>
+            +1 (402) 210-4777
+          </a>
+        </div>
 
+        <!-- Review Card 2 -->
+        <div class="review-card review-2 fade-in">
+          <div>
+            <div class="stars-icon"></div>
+          </div>
+          <div class="review-content">
+            "Extremely pleasant from beginning to end. The size of dumpster was
+            just right and being able to keep it for up to a week, was awesome."
+          </div>
+          <div>
+            <span class="hyphen">&#8212;</span>
+            <span class="review-name"
+              ><a href="/" target="_blank">Kimberly C.</a></span
+            >
+            <span class="review-location">/ Omaha, NE</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: PROJECT TYPES -->
+      <section id="project-types" class="container bg-dark">
+        <h3>We accomodate all projects</h3>
+        <div class="line"></div>
+        <p class="section-subtitle">We are there when and where you need us!</p>
+        <div class="type">
+          <div class="type-img residential-img slide-in from-left">
+            <span class="sticky-note">Residential</span>
+          </div>
+          <div class="type-text type-text-1 fade-in slide-in from-right">
+            <p>
+              We have dumpster rentals perfect for residential renovations,
+              remodels, or small construction projects. It will fit comfortably
+              in your driveway and fit all the junk you don't need. Whether you
+              need a dumpster rental in Omaha or surrounding areas, you can rely
+              on our customer-focused professionals to help you every step of
+              the way. In addition, the dumpster will not annoy your neighbors
+              with bright colors, and yet will be sturdy enough to handle most
+              kinds of debris!
+            </p>
+          </div>
+        </div>
+        <div class="type">
+          <div class="type-img commercial-img slide-in from-right">
+            <span class="sticky-note">Commercial</span>
+          </div>
+          <div class="type-text type-text-2 fade-in slide-in from-left">
+            <p>
+              Our roll-off dumpsters are ideal for construction projects. You
+              can confidently rely on our prompt deliveries and professional,
+              hassle-free service for your next dumpster rental. Our containers
+              fit perfectly in any space with minimal impact to your job site.
+              From waste removal to business expansion projects, see why
+              contractors come to us when looking for a dumpster rental in the
+              Omaha area.
+            </p>
+          </div>
+        </div>
+        <p>
+          We know how important it is to have a quality disposal container.
+          We'll be there, rain or shine, to place your rental exactly where you
+          need it.
+        </p>
+        <a href="tel:+1 (402) 210-4777"
+          ><button class="btn-primary"><strong>Call Now</strong></button></a
+        >
+      </section>
+
+      <!-- Footer -->
+      <footer class="container">
+        <a href="#">
+          <div class="logo-img-dark" onclick="hideMobileMenu()"></div>
+        </a>
+        <a href="tel:+1 (402) 210-4777 " class="phone-number">
+          +1 (402) 210-4777
+        </a>
+        <ul>
+          <li><a href="/index.html" onclick="hideMobileMenu()">Home</a></li>
+          <li>
+            <a href="/dumpsters.html" onclick="hideMobileMenu()">Dumpsters</a>
+          </li>
+          <li><a href="/faq.html" onclick="hideMobileMenu()">FAQ</a></li>
+          <li>
+            <a href="tel:+1 (402) 210-4777" onclick="hideMobileMenu()"
+              >Call Now</a
+            >
+          </li>
+        </ul>
+        <div class="social">
+          <a href="tel:+1 (402) 210-4777 ">
+            <div class="phone-light-icon"></div>
+          </a>
+          <a href="/" target="_blank">
+            <div class="facebook-logo-light-icon"></div>
+          </a>
+          <a href="/" target="_blank">
+            <div class="google-logo-light-icon"></div>
+          </a>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 A Reliable Dumpster, LLC. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.querySelector(".preloader").classList.add("hide");
+        }, 2000);
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
