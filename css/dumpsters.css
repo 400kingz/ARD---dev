@@ -101,10 +101,15 @@
 }
 
 #img-scroll .img-scroll-gallery .img-scroll-1 {
-  background: url('/img/residential.jpeg') no-repeat top / cover;
+  background: url('/img/A-Reliable-Dumpster-Omaha-Nebraska-Shane-Owner-Dumpster-Rentals.webp') no-repeat top / cover;
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  #img-scroll .img-scroll-gallery .img-scroll-1 {
+    width: 211%;
+  }
+}
 
 
 
