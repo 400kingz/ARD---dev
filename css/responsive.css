@@ -280,9 +280,9 @@
     height: 750px;
   }
 
-  /* .header .hero-content .phone-number {
-    display: none;
-  } */
+  .header .hero-content .phone-number {
+    margin-bottom: 1rem;
+  }
 
   .header .hero-content .hero-main {
     text-align: left;
